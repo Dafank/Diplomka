@@ -4,10 +4,31 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/CSS/Cover.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 </head>
 <body>
-    <div>
-        @RenderBody()
+    <div class="wrapper">
+        <div class="main">
+            <div class="header">
+                <ul class="menu">
+                    <li>@Html.ActionLink("Home","Index","Home",null,new { @class ="hov"})</li>
+                    <li>@Html.ActionLink("Translate", "Translate", "Home",null, new { @class = "hov" })</li>
+                    <li>@Html.ActionLink("Grammar", "Grammar", "Home", null, new { @class = "hov" })</li>
+                </ul>
+
+                <ul class="user-menu">
+                    <li>@Html.ActionLink("Login", "Login", "User", null, new { @class = "hov" })</li>
+                    <li>@Html.ActionLink("Sign up", "Registration", "User", null, new { @class = "hov" })</li>
+                </ul>
+            </div>
+            <div class="content">
+                @RenderBody()
+            </div>
+            <div class="footer">
+                v1.1.0.1
+            </div>
+        </div>
     </div>
 </body>
 </html>
