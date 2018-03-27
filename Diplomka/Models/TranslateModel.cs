@@ -48,8 +48,6 @@ namespace Diplomka.Models
 
                 g++;
             }
-
-
             return str;
         }
     }
