@@ -8,109 +8,115 @@ body * {
 }
 
 body {
-    margin: 0;
+        margin: 0;
 }
 
 .wrapper {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background: url('../Image/image.jpg') no-repeat center;
-    background-size: cover;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background: url('../Image/image.jpg') no-repeat center;
+        background-size: cover;
 }
 
 .main {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .9;
-    z-index: 0;
-    background-image: -webkit-linear-gradient(60deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
-    background-image: -o-linear-gradient(60deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
-    background-image: linear-gradient(150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .9;
+        z-index: 0;
+        background-image: -webkit-linear-gradient(60deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+        background-image: -o-linear-gradient(60deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+        background-image: linear-gradient(150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
 }
 
 .header {
-    display: flex;
-    width: 95%;
-    height: 10vh;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
-    font-family: Lobster,cursive;
+        display: flex;
+        width: 95%;
+        height: 10vh;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        font-family: Lobster,cursive;
 }
 
 .menu {
-    flex-flow: row wrap;
-    display: flex;
-    flex-basis: 40%;
-    align-items: center;
-    flex-direction: row;
-    text-align: center;
-    font-size: 25px;
+        flex-flow: row wrap;
+        display: flex;
+        flex-basis: 40%;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        font-size: 25px;
 }
 
-    .menu li {
+.menu li {
         display: flex;
         flex: 1;
         color: white;
         justify-content: space-around;
         list-style: none;
-    }
+}
 
-    .menu a {
+.menu a {
         text-decoration: none;
         color: #fff;
         flex: 1;
         text-align: center;
-    }
+}
 
-    .menu li:hover {
-        opacity: 0.4;
+.menu li:hover {
+        background: -moz-linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1));
+        background: -webkit-linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1));
+        background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1));
+        text-shadow:0 0 3px black;
     }
 
 .user-menu li :hover {
-    opacity: 0.4;
+    background: -moz-linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1));
+    background: -webkit-linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1));
+    background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1));
+    text-shadow: 0 0 3px black;
 }
 
 .user-menu {
-    flex-flow: row wrap;
-    display: flex;
-    flex-basis: 30%;
-    align-items: center;
-    flex-direction: row;
-    text-align: center;
-    font-size: 25px;
+        flex-flow: row wrap;
+        display: flex;
+        flex-basis: 30%;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        font-size: 25px;
 }
 
-    .user-menu li {
+.user-menu li {
         display: flex;
         flex: 1;
         color: white;
         justify-content: space-around;
         list-style: none;
         display: block;
-    }
+}
 
-    .user-menu a {
-        word-wrap: none;
+.user-menu a {
+        text-wrap:none;
         text-decoration: none;
         color: #fff;
         flex: 1;
         display: block;
-    }
+}
 
 .content {
-    height: 85vh;
+        height: 85vh;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    color: rgb(250, 255, 0);
-    font-size: 20px;
-    color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: rgb(250, 255, 0);
+        font-size: 20px;
+        color: blue;
 }
