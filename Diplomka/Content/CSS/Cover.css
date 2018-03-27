@@ -108,10 +108,6 @@ body {
         display: block;
 }
 
-.content {
-        height: 85vh;
-}
-
 .footer {
         display: flex;
         justify-content: center;
@@ -119,4 +115,33 @@ body {
         color: rgb(250, 255, 0);
         font-size: 20px;
         color: blue;
+}
+
+.content {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.form {
+    width: 100%;
+}
+
+.form-translate {
+    height: 40px;
+    padding: 3px;
+    width: 25%;
+    text-align: center;
+    margin: 10px;
+    border-radius: 40px;
+}
+
+.btn-translate {
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    color: white;
 }

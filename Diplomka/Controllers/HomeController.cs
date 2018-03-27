@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Diplomka.Models;
 
 namespace Diplomka.Controllers
 {
@@ -17,6 +18,13 @@ namespace Diplomka.Controllers
         public ActionResult Translate()
         {
             return View();
+        }
+        [HttpPost]
+        public ActionResult Translate(string Word)
+        {
+            string s = TranslateModel.Translater(Word);
+            Object s1 = s;
+            return View(s1);
         }
 
         public ActionResult Grammar()
