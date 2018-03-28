@@ -66,36 +66,30 @@ body {
     font-size: 25px;
 }
 
-    .menu li {
+.menu li {
         display: flex;
         color: white;
         justify-content: space-around;
         list-style: none;
         margin-right: 40px;
         padding:5px;
-    }
+}
 
-        .menu li:last-child {
+.menu li:last-child {
             margin-left: 0;
-        }
+}
 
-    .menu a {
+.menu a {
         text-decoration: none;
         color: #fff;
         text-align: center;
-    }
+}
 
-    .menu li:hover {
-        /*background: -moz-linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));
-        background: -webkit-linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));
-        background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));*/
+.menu li:hover {
         text-shadow: 0 0 3px black;
-    }
+}
 
 .user-menu li :hover {
-    /*background: -moz-linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));
-    background: -webkit-linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));*/
     text-shadow: 0 0 3px black;
 }
 
@@ -108,23 +102,23 @@ body {
     font-size: 25px;
 }
 
-    .user-menu li {
+.user-menu li {
         color: white;
         list-style: none;
         display: block;
         margin-right: 40px;
-    }
+}
 
-        .user-menu li:last-child {
+.user-menu li:last-child {
             margin-right: 0;
-        }
+}
 
-    .user-menu a {
+.user-menu a {
         text-decoration: none;
         color: #fff;
         display: block;
         padding:5px;
-    }
+}
 
 @media only screen and (max-width: 650px) {
     .header {
@@ -179,5 +173,4 @@ body {
     flex: 1 0 auto;
     justify-content:center;
     font-size:larger;
-    /* http://dimox.name/press_footer_bottom_with_css/ */
 }
