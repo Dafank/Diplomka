@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Diplomka.Models.User.Login;
+using Diplomka.Models.User.Registration;
 
 namespace Diplomka.Controllers
 {
@@ -13,9 +15,35 @@ namespace Diplomka.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Login(LoginData login)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToRoute(new { controller = "Home", action = "Index" });
+            }
+            else
+            {
+                return View();
+            }
+        }
         public ActionResult Registration()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Registration(RegistrationData registration)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToRoute(new { controller = "Home", action = "Index" });
+            }
+            else
+            {
+                return View();
+            }
         }
     }
 }

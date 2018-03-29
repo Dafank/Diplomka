@@ -1,0 +1,39 @@
+﻿input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.present {
+    text-align: center;
+    font-size: 2em;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+input[type=submit]:hover {
+        background-color: #069f06;
+}
+
+.button {
+        font-size: 15px;
+        text-decoration: none;
+        border: solid grey 1px;
+        background-color: firebrick;
+        color: navajowhite;
+        padding: 6px;
+        border-radius: 4px;
+        float: right;
+        width: 200px;
+        text-align: center;
+        margin: 15px
+}

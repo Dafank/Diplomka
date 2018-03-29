@@ -90,6 +90,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\CSS\Cover.css" />
+    <Content Include="Content\CSS\User\Registration\Registration.css" />
+    <Content Include="Content\CSS\User\Validation.css" />
     <Content Include="Content\Image\image.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -103,6 +105,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\TranslateModel.cs" />
+    <Compile Include="Models\User\Login\LoginData.cs" />
+    <Compile Include="Models\User\Registration\RegistrationData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\CSS\User\Login\" />
     <Folder Include="Content\JS\" />
   </ItemGroup>
   <PropertyGroup>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.IO;
 using System.Text;
+using System.Diagnostics;
 
 namespace Diplomka.Models
 {
@@ -40,10 +41,11 @@ namespace Diplomka.Models
             string str = null;
             foreach (string es in asd)
             {
-                if (es == s)
+                if (es == s.ToLower())
                 {
                     ++g;
                     str = asd[g];
+                    str = str.Substring(0, 1).ToUpper() + str.Remove(0, 1);
                 }
 
                 g++;

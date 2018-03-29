@@ -4,7 +4,7 @@ it воно
 in у
 his його
 with з
-not не
+not ні
 for для
 on на
 at біля
@@ -87,4 +87,6 @@ than ніж
 is є
 also також
 off поза(чимось)
-away прочь
+yet ще
+probably ймовірно
+

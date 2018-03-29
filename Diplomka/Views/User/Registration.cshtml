@@ -1,4 +1,4 @@
-﻿
+﻿@model Diplomka.Models.User.Registration.RegistrationData
 @{
     Layout = null;
 }
@@ -9,10 +9,33 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Registration</title>
+    <link rel="stylesheet" href="~/Content/CSS/User/Validation.css"/>
+    <link rel="stylesheet" href="~/Content/CSS/User/Registration/Registration.css"/>
 </head>
 <body>
-    <div> 
-        Coming soon..
-    </div>
+    <h2 class="present">Registration</h2>
+    @using (Html.BeginForm())
+    {
+        <b>@Html.LabelFor(x => x.Email):</b>
+        @Html.EditorFor(x => x.Email, new { htmlAttributes = new { placeholder = "Enter Email", @required = "true", @class = "Email" } })
+        @Html.ValidationMessageFor(x => x.Email)
+        <br />
+        <b>@Html.LabelFor(x => x.NickName)</b>
+        @Html.EditorFor(x => x.NickName, new { htmlAttributes = new { placeholder = "Enter Nickname", @required = "true", @class = "Email" } })
+        @Html.ValidationMessageFor(x => x.NickName)
+        <br />
+        <b>@Html.LabelFor(x => x.Password):</b>
+        @Html.EditorFor(x => x.Password, new { htmlAttributes = new { placeholder = "Enter Password", @required = "true", @type = "password" } })
+        @Html.ValidationMessageFor(x => x.Password)
+        <br />
+        <b>@Html.LabelFor(x => x.PasswordConfirm)</b>
+        @Html.EditorFor(x => x.PasswordConfirm, new { htmlAttributes = new { placeholder = "Repeat Password", @required = "true", @type="password" } })
+        @Html.ValidationMessageFor(x => x.PasswordConfirm)
+        <br />
+        <input type="submit" value="Create Account">
+
+        @Html.ActionLink("I have account", "Login", "User", null, new { @class = "button" })
+
+    }
 </body>
 </html>
