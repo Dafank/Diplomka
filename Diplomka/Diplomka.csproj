@@ -89,10 +89,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\CSS\Cover.css" />
-    <Content Include="Content\CSS\User\Registration\Registration.css" />
-    <Content Include="Content\CSS\User\Validation.css" />
+    <Content Include="Content\Page\Cover.css" />
+    <Content Include="Content\User\CSS\Login\Login.css" />
+    <Content Include="Content\User\CSS\Registration\Registration.css" />
+    <Content Include="Content\User\CSS\Validation.css" />
     <Content Include="Content\Image\image.jpg" />
+    <Content Include="Content\User\Images\image.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -117,8 +119,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Translate.cshtml" />
     <Content Include="Views\Home\Grammar.cshtml" />
-    <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\Registration.cshtml" />
+    <Content Include="Views\Shared\User\_UserLayout.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -128,7 +131,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\CSS\User\Login\" />
     <Folder Include="Content\JS\" />
   </ItemGroup>
   <PropertyGroup>

@@ -1,18 +1,26 @@
-﻿
+﻿@model Diplomka.Models.User.Login.LoginData
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/User/_UserLayout.cshtml";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Login</title>
-</head>
-<body>
-    <div> 
-        Coming soon...
+<form class="form-container">
+    <h1>Login</h1>
+    <div class="form-group">
+        <b>@Html.LabelFor(x => x.Email):</b>
+        <div class="IconInput">
+            @Html.EditorFor(x => x.Email, new { htmlAttributes = new { placeholder = "Email", @required = "true"}})
+            <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
+        @Html.ValidationMessageFor(x => x.Email)
     </div>
-</body>
-</html>
+    <div class="form-group">
+        <b>@Html.LabelFor(x => x.Password):</b>
+        <div class="IconInput">
+            @Html.EditorFor(x => x.Password, new { htmlAttributes = new { placeholder = "Password", @required = "true" } })
+            <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success btn-block">Sign in</button>
+</form>
+
+
