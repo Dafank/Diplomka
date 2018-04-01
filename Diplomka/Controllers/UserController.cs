@@ -19,6 +19,7 @@ namespace Diplomka.Controllers
         [HttpPost]
         public ActionResult Login(LoginData login)
         {
+            DateTime x = new DateTime();
             if (ModelState.IsValid)
             {
                 return RedirectToRoute(new { controller = "Home", action = "Index" });
