@@ -41,6 +41,7 @@
                                         @Html.EditorFor(x => x.Password, new { htmlAttributes = new { placeholder = "Password", @required = "true" } })
                                         <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
                                     </div>
+                                    @Html.ValidationMessageFor(x => x.Password)
                                 </div>
                                 <button type="submit" class="btn btn-success btn-block">Sign in</button>
                             }

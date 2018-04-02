@@ -4,25 +4,20 @@
 }
 
 .bg {
-    background: url('/Content/User/Images/image.jpg') no-repeat center;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    background-size: 100% 100vh;
-    position:absolute;
+    background: url('/Content/User/Images/Log-Image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .form-container {
     padding: 50px 60px;
-    margin-top: 20vh;
+    margin-top: 15vh;
     -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
     box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
     min-width: 250px;
     font-size: 20px;
-    color: rgb(0, 51, 204);
-    text-shadow: 0 0 4px 0 #fff;
+    color: #00336E;
 }
 
 h1 {
@@ -41,7 +36,7 @@ input {
 
     input:focus {
         border-color: rgb(0, 153, 0);
-        box-shadow: 0 0 8px 0 rgb(0, 153, 0);
+        box-shadow: 0 0 3px rgb(0, 153, 0);
     }
 
 .IconInput input {
