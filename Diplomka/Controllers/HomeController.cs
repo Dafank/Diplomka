@@ -22,7 +22,7 @@ namespace Diplomka.Controllers
         [HttpPost]
         public ActionResult Translate(string Word)
         {
-            string s = TranslateModel.Translater(Word);
+            string s = Translaters.SetData(Word);
             Object s1 = s;
             return View(s1);
         }
